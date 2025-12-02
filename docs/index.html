@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbrakes Controller PCB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .logo span {
+            color: #00d4ff;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 30px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        .hero {
+            padding: 150px 0 100px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #b0b0b0;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+        }
+
+        .features {
+            padding: 80px 0;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .features h2 {
+            text-align: center;
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .feature-card .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #b0b0b0;
+        }
+
+        .specs {
+            padding: 80px 0;
+        }
+
+        .specs h2 {
+            text-align: center;
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+
+        .specs-content {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .spec-item {
+            padding: 20px;
+            border-left: 3px solid #00d4ff;
+        }
+
+        .spec-item h4 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+
+        .spec-item p {
+            color: #b0b0b0;
+        }
+
+        .about {
+            padding: 80px 0;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .about h2 {
+            text-align: center;
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .about p {
+            color: #b0b0b0;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Airbrakes<span>PCB</span></div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#specs">Specifications</a>
+                <a href="#about">About</a>
+                <a href="https://github.com/noeljb2/AirbrakesControllerPCB">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Airbrakes Controller PCB</h1>
+            <p>A custom-designed PCB for high-performance rocketry airbrake control systems, engineered with precision using Altium Designer.</p>
+            <a href="https://github.com/noeljb2/AirbrakesControllerPCB" class="btn">View on GitHub</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">🚀</div>
+                    <h3>High-Performance Design</h3>
+                    <p>Optimized for reliability and performance in high-altitude rocketry applications with robust signal integrity.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⚡</div>
+                    <h3>Real-Time Control</h3>
+                    <p>Precise servo motor control for dynamic airbrake deployment during flight, ensuring accurate apogee targeting.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📊</div>
+                    <h3>Sensor Integration</h3>
+                    <p>Integrated interfaces for barometric pressure sensors, accelerometers, and gyroscopes for flight data acquisition.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔧</div>
+                    <h3>Altium Designer</h3>
+                    <p>Professional-grade PCB design created using Altium Designer with multi-layer routing and proper grounding.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📡</div>
+                    <h3>Communication Ready</h3>
+                    <p>Built-in support for telemetry and data logging to track flight performance and system diagnostics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔋</div>
+                    <h3>Power Management</h3>
+                    <p>Efficient power regulation circuitry designed for battery-powered operation with low power consumption modes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specs" id="specs">
+        <div class="container">
+            <h2>Technical Specifications</h2>
+            <div class="specs-content">
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <h4>Design Software</h4>
+                        <p>Altium Designer</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Application</h4>
+                        <p>Rocketry Airbrake Control</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Control Type</h4>
+                        <p>Servo Motor Driver</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Sensors</h4>
+                        <p>Barometer, IMU Compatible</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Power</h4>
+                        <p>Battery Operated</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Form Factor</h4>
+                        <p>Compact, Rocket-Mountable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About the Project</h2>
+            <p>The Airbrakes Controller PCB is designed to provide precise control over airbrake deployment in high-powered rocketry applications. By dynamically adjusting the drag on the rocket during ascent, this system helps achieve precise apogee targeting for competition rockets.</p>
+            <p>This PCB was designed using Altium Designer, a professional-grade electronic design automation (EDA) software, ensuring high-quality PCB layouts with proper signal integrity, power distribution, and manufacturability.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Airbrakes Controller PCB &copy; 2024 | <a href="https://github.com/noeljb2/AirbrakesControllerPCB">View Source on GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>
