@@ -8,19 +8,7 @@ The airbrakes controller integrates sensing, computation, and actuation to deplo
 
 ---
 
-## Key Features & Hardware Summary
 
-> **Note:** Update the following placeholders with exact part numbers and specifications as the design is finalized.
-
-| Component         | Description / Part Number                          |
-|-------------------|----------------------------------------------------|
-| **Microcontroller** | _[Placeholder: e.g., STM32F4xx, Teensy 4.x, etc.]_ |
-| **Sensors**         | _[Placeholder: IMU, barometer, accelerometer, etc.]_ |
-| **Actuators**       | _[Placeholder: servo, stepper motor, etc.]_       |
-| **Power**           | _[Placeholder: battery type, voltage regulator, etc.]_ |
-| **Connectors**      | _[Placeholder: JST, Molex, screw terminals, etc.]_ |
-
----
 
 ## Assembly & Mounting Notes
 
