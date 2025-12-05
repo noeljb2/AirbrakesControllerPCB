@@ -51,7 +51,7 @@ The following images are included in the `images/` folder for reference:
 ![Schematic Page 3](images/schematic_page_3.png)
 *Schematic diagram – Page 3.*
 
-> **Note:** The repository originally contained four images at the root (`image.png`, `image copy.png`, `image copy 2.png`, `image copy 3.png`). These have been reorganized into the `images/` folder with descriptive names. Reviewers should verify that the mapping of schematic pages vs. the 3D render is correct and update as needed.
+
 
 ---
 
@@ -65,19 +65,6 @@ The following images are included in the `images/` folder for reference:
 
 ---
 
-## Contributing
-
-Contributions are welcome! If you'd like to contribute:
-
-1. Fork this repository.
-2. Create a feature branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -m 'Add your feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a Pull Request.
-
-Please ensure all changes are tested and documented.
-
----
 
 ## Safety & Disclaimer
 
@@ -110,5 +97,3 @@ _No license has been specified yet. Please add a LICENSE file to this repository
 - For questions or contributions, please open an issue or pull request in this repository.
 
 ---
-
-*This README was created to document the Airbrakes Controller PCB project for Pitt SOAR. Please update hardware details and contact information as the project evolves.*
