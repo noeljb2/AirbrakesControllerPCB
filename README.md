@@ -39,17 +39,6 @@ The following images are included in the `images/` folder for reference:
 ![PCB 3D Render](images/pcb_3d_render.png)
 *3D render of the Airbrakes Controller PCB showing component placement and board layout.*
 
-### Schematic Page 1
-![Schematic Page 1](images/schematic_page_1.png)
-*Schematic diagram – Page 1.*
-
-### Schematic Page 2
-![Schematic Page 2](images/schematic_page_2.png)
-*Schematic diagram – Page 2.*
-
-### Schematic Page 3
-![Schematic Page 3](images/schematic_page_3.png)
-*Schematic diagram – Page 3.*
 
 
 
