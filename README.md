@@ -17,17 +17,6 @@ The airbrakes controller integrates sensing, computation, and actuation to deplo
 - Double-check connector orientations and secure all wiring harnesses before flight.
 - Refer to schematic and 3D render images below for component placement and board layout.
 
----
-
-## Files & Folders
-
-| Path / File                     | Description                                      |
-|---------------------------------|--------------------------------------------------|
-| `images/`                       | Folder containing schematic and render images    |
-| `images/pcb_3d_render.png`      | 3D render of the assembled PCB                   |
-| `images/schematic_page_1.png`   | Schematic diagram (Page 1)                       |
-| `images/schematic_page_2.png`   | Schematic diagram (Page 2)                       |
-| `images/schematic_page_3.png`   | Schematic diagram (Page 3)                       |
 
 ---
 
