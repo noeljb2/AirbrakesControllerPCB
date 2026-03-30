@@ -1,6 +1,6 @@
 # Airbrakes Controller PCB
 
-> **Developed by [Pitt SOAR – Society of Aerospace Rocketry](https://pittsoar.org)**
+> **Developed by [Pitt SOAR – Society of Aerospace Rocketry](https://www.linkedin.com/company/pittsburgh-soar)**
 
 ---
 
@@ -36,10 +36,11 @@ The Airbrakes Controller PCB is the flight computer for the active drag system o
 
 ## Images
 
-The `images/` directory contains:
+### Action Shot
+![Action Shot](images/ActionShot.jpg)
 
-- **PCB 3D Render** — component placement and board layout
-- **Schematic** — full circuit design reference
+### Top-Down PCB View
+![Top Down PCB](images/TopDownPCB.png)
 
 ---
 
@@ -56,7 +57,7 @@ The `images/` directory contains:
 
 ## Sponsors
 
-[![PCBway](https://www.pcbway.com/project/img/images/frompcbway-1220.png)](https://www.pcbway.com)
+[![PCBway](https://images.squarespace-cdn.com/content/v1/59b037304c0dbfb092fbe894/1574266723216-3GI9YH3SC37PUJ0DMA9C/image-asset.png)](https://www.pcbway.com)
 
 This project was sponsored by **[PCBway](https://www.pcbway.com)**, who provided PCB fabrication support. PCBway offers high-quality PCB manufacturing and assembly services for engineers, students, and hobbyists worldwide. We greatly appreciate their support of university rocketry programs.
 
@@ -114,6 +115,6 @@ SOFTWARE.
 **Pitt SOAR – Society of Aerospace Rocketry**
 University of Pittsburgh
 
-- 🌐 Website: [pittsoar.org](https://pittsoar.org) *(update if URL differs)*
+- 🔗 LinkedIn: [Pittsburgh SOAR](https://www.linkedin.com/company/pittsburgh-soar)
 - 📧 Contact: *(add team email here)*
 - 🐛 Issues & contributions: Open an issue or pull request in this repository
