@@ -116,5 +116,3 @@ SOFTWARE.
 University of Pittsburgh
 
 - 🔗 LinkedIn: [Pittsburgh SOAR](https://www.linkedin.com/company/pittsburgh-soar)
-- 📧 Contact: *(add team email here)*
-- 🐛 Issues & contributions: Open an issue or pull request in this repository
