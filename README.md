@@ -1,77 +1,119 @@
 # Airbrakes Controller PCB
 
-## Project Summary
-
-This repository contains the design files for the **Airbrakes Controller PCB** developed for **Pitt SOAR** (Society of Aerospace Rocketry). The controller is designed to fit within a 3-inch diameter rocket and manages the airbrakes system for active flight control and apogee targeting.
-
-The airbrakes controller integrates sensing, computation, and actuation to deploy airbrakes during powered and coast phases of flight, helping the rocket reach a precise target altitude.
+> **Developed by [Pitt SOAR – Society of Aerospace Rocketry](https://pittsoar.org)**
 
 ---
 
+## Project Summary
 
+The Airbrakes Controller PCB is the flight computer for the active drag system on Pitt SOAR's competition rocket. Designed to fit within a **3-inch diameter airframe**, it manages real-time sensor fusion, flight state estimation, and servo actuation to deploy airbrakes during coast phase — enabling precision apogee targeting.
+
+---
+
+## Hardware Specifications
+
+| Component | Part | Notes |
+|-----------|------|-------|
+| Microcontroller | STM32F411CEU6 | ARM Cortex-M4, 100 MHz |
+| Barometric Pressure | BMP581 | Altitude estimation |
+| IMU | LSM6DSOX | 6-DOF accel/gyro |
+| High-G Accelerometer | ADXL375 | ±200g range |
+| Data Logging | SDIO (microSD) | Flight data recording |
+| Servo Control | Hardware PWM timer | Airbrake actuation |
+| Status Indication | WS2812B NeoPixel | RGB status LED |
+| Form Factor | 4-layer PCB | ~3" diameter constraint |
+
+---
 
 ## Assembly & Mounting Notes
 
-- The PCB is designed for integration in a **3-inch diameter rocket** airframe.
-- Ensure proper alignment with the airbrakes mechanism and secure mounting to withstand flight loads.
-- Double-check connector orientations and secure all wiring harnesses before flight.
-- Refer to schematic and 3D render images below for component placement and board layout.
-
+- Designed for integration in a **3-inch diameter rocket airframe**
+- Ensure proper alignment with the airbrakes mechanism and secure mounting to withstand flight loads
+- Double-check connector orientations and secure all wiring harnesses before flight
+- Refer to schematic and 3D render images in the `images/` folder for component placement and board layout
 
 ---
 
-## Images Included
+## Images
 
-The following images are included in the `images/` folder for reference:
+The `images/` directory contains:
 
-### PCB 3D Render
-![PCB 3D Render](images/pcb_3d_render.png)
-*3D render of the Airbrakes Controller PCB showing component placement and board layout.*
-
-
-
+- **PCB 3D Render** — component placement and board layout
+- **Schematic** — full circuit design reference
 
 ---
 
 ## Usage
 
-1. Review the schematic diagrams to understand the circuit design.
-2. Use the 3D render to verify component placement and board dimensions.
-3. Fabricate the PCB using the design files (if available) or order from a PCB manufacturer.
-4. Assemble components per the schematic and test before integration.
-5. Integrate into the rocket airframe and connect to the airbrakes mechanism.
+1. Review the schematic diagrams to understand the circuit design
+2. Use the 3D render to verify component placement and board dimensions
+3. Fabricate the PCB using the provided design files or order from a PCB manufacturer
+4. Assemble components per the schematic and bench-test all peripherals before integration
+5. Flash firmware and verify sensor output over serial before flight
+6. Integrate into the rocket airframe and connect to the airbrakes mechanism
 
 ---
 
+## Sponsors
+
+[![PCBway](https://www.pcbway.com/project/img/images/frompcbway-1220.png)](https://www.pcbway.com)
+
+This project was sponsored by **[PCBway](https://www.pcbway.com)**, who provided PCB fabrication support. PCBway offers high-quality PCB manufacturing and assembly services for engineers, students, and hobbyists worldwide. We greatly appreciate their support of university rocketry programs.
+
+---
 
 ## Safety & Disclaimer
 
-- **This project involves high-power rocketry.** Always follow NAR, TRA, or local regulations.
-- Ensure proper safety reviews and testing before any flight.
-- The authors are not responsible for any damage, injury, or regulatory violations resulting from the use of this design.
-- Use at your own risk.
+- This project involves **high-power rocketry**. Always follow [NAR](https://www.nar.org), [TRA](https://www.tripoli.org), and all applicable local regulations
+- Ensure proper safety reviews and full system testing before any flight
+- The authors are not responsible for any damage, injury, or regulatory violations resulting from the use of this design
+- **Use at your own risk**
 
 ---
 
 ## License
 
-> **Suggestion:** Add an appropriate open-source license (e.g., MIT, Apache 2.0, GPL) to clarify usage rights.
+This project is licensed under the **MIT License**. See [`LICENSE`](LICENSE) for full terms.
 
-_No license has been specified yet. Please add a LICENSE file to this repository._
+```
+MIT License
+
+Copyright (c) 2025 Pitt SOAR – Society of Aerospace Rocketry
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 ---
 
 ## Changelog
 
-| Version | Date       | Description                                      |
-|---------|------------|--------------------------------------------------|
-| 1.0     | TBD        | Initial release of the Airbrakes Controller PCB  |
+| Version | Date | Description |
+|---------|------|-------------|
+| 1.0 | TBD | Initial release of the Airbrakes Controller PCB |
 
 ---
 
-## Authors & Contacts
+## Authors & Contact
 
-- **Pitt SOAR** – [Website or Contact Info Placeholder]
-- For questions or contributions, please open an issue or pull request in this repository.
+**Pitt SOAR – Society of Aerospace Rocketry**
+University of Pittsburgh
 
----
+- 🌐 Website: [pittsoar.org](https://pittsoar.org) *(update if URL differs)*
+- 📧 Contact: *(add team email here)*
+- 🐛 Issues & contributions: Open an issue or pull request in this repository
