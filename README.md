@@ -1,7 +1,5 @@
 # Airbrakes Controller PCB
 
-> **Developed by [Pitt SOAR – Society of Aerospace Rocketry](https://www.linkedin.com/company/pittsburgh-soar)**
-
 ---
 
 ## Project Summary
