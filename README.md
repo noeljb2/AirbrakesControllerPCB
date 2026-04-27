@@ -107,9 +107,3 @@ SOFTWARE.
 
 ---
 
-## Authors & Contact
-
-**Pitt SOAR – Society of Aerospace Rocketry**
-University of Pittsburgh
-
-- 🔗 LinkedIn: [Pittsburgh SOAR](https://www.linkedin.com/company/pittsburgh-soar)
