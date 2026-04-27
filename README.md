@@ -17,7 +17,6 @@ The Airbrakes Controller PCB is the flight computer for the active drag system o
 | Microcontroller | STM32F411CEU6 | ARM Cortex-M4, 100 MHz |
 | Barometric Pressure | BMP581 | Altitude estimation |
 | IMU | LSM6DSOX | 6-DOF accel/gyro |
-| High-G Accelerometer | ADXL375 | ±200g range |
 | Data Logging | SDIO (microSD) | Flight data recording |
 | Servo Control | Hardware PWM timer | Airbrake actuation |
 | Status Indication | WS2812B NeoPixel | RGB status LED |
