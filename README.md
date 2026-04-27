@@ -4,7 +4,7 @@
 
 ## Project Summary
 
-The Airbrakes Controller PCB is the flight computer for the active drag system on Pitt SOAR's competition rocket. Designed to fit within a **3-inch diameter airframe**, it manages real-time sensor fusion, flight state estimation, and servo actuation to deploy airbrakes during coast phase — enabling precision apogee targeting.
+The Airbrakes Controller PCB is the flight computer for the active drag system. Designed to fit within a **3-inch diameter airframe**, it manages real-time sensor fusion, flight state estimation, and servo actuation to deploy airbrakes during coast phase — enabling precision apogee targeting.
 
 ---
 
